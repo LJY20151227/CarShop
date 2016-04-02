@@ -1,0 +1,117 @@
+/*reset*/
+*{margin: 0;padding: 0;text-decoration: none;font-family: "微软雅黑";font-size: 16px;}
+ul{list-style-type: none;}
+textarea{resize:none;}
+
+.fl{float: left;}
+.fr{float:right;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.db{display: block;}
+.clear{clear: both;}
+
+.noWrap{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.wrapSet{text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;
+	word-break:break-all;overflow: hidden;}
+.wrapSet2{-webkit-line-clamp: 2;}
+.wrapSet3{-webkit-line-clamp: 3;}
+.wrapSet4{-webkit-line-clamp: 4;}
+.wrapSet5{-webkit-line-clamp: 5;}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+a:hover,a:focus,a:visited,a:link{
+	text-decoration: none;
+}
+
+/*头部*/
+body{
+	position: relative;
+}
+
+.header{
+	height: 62px;
+	background-color: #1b2b3b;
+	border-top: #eeb817 2px solid;
+}
+.main{
+	display: inline-block;
+	height: 60px;
+}
+.nav-list{
+	float: left;
+}
+.nav-list a{
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	padding-right: 30px;
+	color: #fff;
+	transition: all .3s;
+}
+.nav-list a:hover{
+	color: #eeb817;
+}
+.phone{
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	text-indent: 2em;
+	background: url(../images/phone.png) no-repeat left center;
+	color: #fff;
+	font-weight: bold;
+}
+.login-btn a{
+	height: 60px;
+	line-height: 60px;
+	font-size: 0.87em;
+	color: #fff;
+	transition: all .3s;
+}
+.login-btn a:hover{
+	color: #eeb817;
+}
+
+/*轮播样式改动*/
+
+
+/*租车按钮*/
+#book-btn{width: 250px;height: 60px;background-color: #213252;margin: 40px auto;color: #fff;line-height: 60px;text-align: center;color: #fff;display: block;font-size: 30px;transition: all .3s;}
+#book-btn:hover{text-decoration: none;background-color: rgb(34,68,119); }
+
+
+.intro{height: 100px;width: 100%;margin-top: 50px;}
+.intro #img-container{width:1200px;height:100px;margin: 0 auto;}
+.intro img{width: 295px;height: 100px;border-right:1px #e7e7e7 solid;margin: 0px auto;overflow: hidden;}
+
+/*尾部样式*/
+.footer{
+	background-color: #151f34;
+	height: 240px;
+}
+.footer-logo{
+	height: auto;
+	margin-top: 75px;
+}
+.server-info,.server-info a{
+    color: #8ea5b9;
+}
+.server-info h3{
+	text-align: center;
+	font-weight: normal;
+}
+.server-info li{
+	padding: 2px 0;
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+	.header,.footer{
+		height: auto;
+	}
+	.nav-list a,.phone,.login-btn a{
+		height: 40px;
+		line-height: 40px;
+	}
+	.down p{font-size: .3em;}
+}
